@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/generate_samples.py:*)",
+      "Bash(./run_evaluation.sh:*)",
+      "Bash(python3:*)",
+      "Bash(wc:*)",
+      "Bash(find:*)",
+      "Bash(git -C /Users/mariamalmutairi/Documents/PhdProj/secTest/SecMutBench log --oneline -20)",
+      "Bash(python -m py_compile:*)",
+      "Bash(python:*)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(xargs -I {} bash -c 'echo \"\"\"\"=== {} ===\"\"\"\" && grep \"\"\"\"from evaluation\"\"\"\" {}')",
+      "Bash(pytest:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:openreview.net)",
+      "WebFetch(domain:www.researchgate.net)",
+      "WebFetch(domain:orbilu.uni.lu)",
+      "Bash(tee:*)",
+      "WebFetch(domain:docs.arc.vt.edu)",
+      "Bash(ls:*)",
+      "Bash(PYTHONPATH=scripts:. python3:*)",
+      "Bash(/tmp/fix_cwe643_remaining.py:*)",
+      "Bash(echo:*)",
+      "Bash(gtimeout 60 semgrep:*)",
+      "Bash(perl -e \"alarm 60; exec @ARGV\" semgrep --config p/python --json --quiet /tmp/test_semgrep.py)",
+      "WebFetch(domain:www.together.ai)",
+      "WebFetch(domain:docs.together.ai)",
+      "Bash(/Users/mariamalmutairi/miniconda3/envs/sectest/bin/python:*)",
+      "WebFetch(domain:docs.z.ai)",
+      "WebFetch(domain:docs.fireworks.ai)",
+      "Bash(pip install:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "alwaysThinkingEnabled": true
+}

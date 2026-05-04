@@ -1,0 +1,403 @@
+{
+  "summary": {
+    "total_mutants": 1869,
+    "compilable_count": 1869,
+    "compilable_ratio": 1.0,
+    "execution_tested": true,
+    "executable_count": 1848,
+    "executable_ratio": 0.9887640449438202
+  },
+  "compile_errors": {},
+  "by_operator": {
+    "PSQLI": {
+      "total": 80,
+      "compilable": 80,
+      "compilable_ratio": 1.0,
+      "executable": 80,
+      "executable_ratio": 1.0
+    },
+    "RVALID": {
+      "total": 151,
+      "compilable": 151,
+      "compilable_ratio": 1.0,
+      "executable": 130,
+      "executable_ratio": 0.8609271523178808
+    },
+    "PATHCONCAT": {
+      "total": 87,
+      "compilable": 87,
+      "compilable_ratio": 1.0,
+      "executable": 87,
+      "executable_ratio": 1.0
+    },
+    "INPUTVAL": {
+      "total": 119,
+      "compilable": 119,
+      "compilable_ratio": 1.0,
+      "executable": 119,
+      "executable_ratio": 1.0
+    },
+    "HARDCODE": {
+      "total": 81,
+      "compilable": 81,
+      "compilable_ratio": 1.0,
+      "executable": 81,
+      "executable_ratio": 1.0
+    },
+    "DESERIAL": {
+      "total": 106,
+      "compilable": 106,
+      "compilable_ratio": 1.0,
+      "executable": 106,
+      "executable_ratio": 1.0
+    },
+    "RMAUTH": {
+      "total": 105,
+      "compilable": 105,
+      "compilable_ratio": 1.0,
+      "executable": 105,
+      "executable_ratio": 1.0
+    },
+    "WEAKCRYPTO": {
+      "total": 128,
+      "compilable": 128,
+      "compilable_ratio": 1.0,
+      "executable": 128,
+      "executable_ratio": 1.0
+    },
+    "CSRF_REMOVE": {
+      "total": 82,
+      "compilable": 82,
+      "compilable_ratio": 1.0,
+      "executable": 82,
+      "executable_ratio": 1.0
+    },
+    "XXE": {
+      "total": 56,
+      "compilable": 56,
+      "compilable_ratio": 1.0,
+      "executable": 56,
+      "executable_ratio": 1.0
+    },
+    "SSRF": {
+      "total": 97,
+      "compilable": 97,
+      "compilable_ratio": 1.0,
+      "executable": 97,
+      "executable_ratio": 1.0
+    },
+    "EVALINJECT": {
+      "total": 98,
+      "compilable": 98,
+      "compilable_ratio": 1.0,
+      "executable": 98,
+      "executable_ratio": 1.0
+    },
+    "NOCERTVALID": {
+      "total": 60,
+      "compilable": 60,
+      "compilable_ratio": 1.0,
+      "executable": 60,
+      "executable_ratio": 1.0
+    },
+    "RENCRYPT": {
+      "total": 90,
+      "compilable": 90,
+      "compilable_ratio": 1.0,
+      "executable": 90,
+      "executable_ratio": 1.0
+    },
+    "WEAKRANDOM": {
+      "total": 45,
+      "compilable": 45,
+      "compilable_ratio": 1.0,
+      "executable": 45,
+      "executable_ratio": 1.0
+    },
+    "FILEUPLOAD": {
+      "total": 35,
+      "compilable": 35,
+      "compilable_ratio": 1.0,
+      "executable": 35,
+      "executable_ratio": 1.0
+    },
+    "OPENREDIRECT": {
+      "total": 63,
+      "compilable": 63,
+      "compilable_ratio": 1.0,
+      "executable": 63,
+      "executable_ratio": 1.0
+    },
+    "IDOR": {
+      "total": 20,
+      "compilable": 20,
+      "compilable_ratio": 1.0,
+      "executable": 20,
+      "executable_ratio": 1.0
+    },
+    "MISSINGAUTH": {
+      "total": 83,
+      "compilable": 83,
+      "compilable_ratio": 1.0,
+      "executable": 83,
+      "executable_ratio": 1.0
+    },
+    "INFOEXPOSE": {
+      "total": 34,
+      "compilable": 34,
+      "compilable_ratio": 1.0,
+      "executable": 34,
+      "executable_ratio": 1.0
+    },
+    "REGEXDOS": {
+      "total": 24,
+      "compilable": 24,
+      "compilable_ratio": 1.0,
+      "executable": 24,
+      "executable_ratio": 1.0
+    },
+    "WEAKPERM": {
+      "total": 60,
+      "compilable": 60,
+      "compilable_ratio": 1.0,
+      "executable": 60,
+      "executable_ratio": 1.0
+    },
+    "LOGINJECT": {
+      "total": 62,
+      "compilable": 62,
+      "compilable_ratio": 1.0,
+      "executable": 62,
+      "executable_ratio": 1.0
+    },
+    "WEAKKEY": {
+      "total": 47,
+      "compilable": 47,
+      "compilable_ratio": 1.0,
+      "executable": 47,
+      "executable_ratio": 1.0
+    },
+    "LDAPINJECT": {
+      "total": 56,
+      "compilable": 56,
+      "compilable_ratio": 1.0,
+      "executable": 56,
+      "executable_ratio": 1.0
+    }
+  },
+  "by_cwe": {
+    "CWE-89": {
+      "total": 80,
+      "compilable": 80,
+      "compilable_ratio": 1.0,
+      "executable": 80,
+      "executable_ratio": 1.0
+    },
+    "CWE-79": {
+      "total": 64,
+      "compilable": 64,
+      "compilable_ratio": 1.0,
+      "executable": 43,
+      "executable_ratio": 0.671875
+    },
+    "CWE-22": {
+      "total": 87,
+      "compilable": 87,
+      "compilable_ratio": 1.0,
+      "executable": 87,
+      "executable_ratio": 1.0
+    },
+    "CWE-20": {
+      "total": 59,
+      "compilable": 59,
+      "compilable_ratio": 1.0,
+      "executable": 59,
+      "executable_ratio": 1.0
+    },
+    "CWE-74": {
+      "total": 57,
+      "compilable": 57,
+      "compilable_ratio": 1.0,
+      "executable": 57,
+      "executable_ratio": 1.0
+    },
+    "CWE-798": {
+      "total": 81,
+      "compilable": 81,
+      "compilable_ratio": 1.0,
+      "executable": 81,
+      "executable_ratio": 1.0
+    },
+    "CWE-502": {
+      "total": 46,
+      "compilable": 46,
+      "compilable_ratio": 1.0,
+      "executable": 46,
+      "executable_ratio": 1.0
+    },
+    "CWE-306": {
+      "total": 97,
+      "compilable": 97,
+      "compilable_ratio": 1.0,
+      "executable": 97,
+      "executable_ratio": 1.0
+    },
+    "CWE-327": {
+      "total": 71,
+      "compilable": 71,
+      "compilable_ratio": 1.0,
+      "executable": 71,
+      "executable_ratio": 1.0
+    },
+    "CWE-328": {
+      "total": 57,
+      "compilable": 57,
+      "compilable_ratio": 1.0,
+      "executable": 57,
+      "executable_ratio": 1.0
+    },
+    "CWE-352": {
+      "total": 82,
+      "compilable": 82,
+      "compilable_ratio": 1.0,
+      "executable": 82,
+      "executable_ratio": 1.0
+    },
+    "CWE-611": {
+      "total": 56,
+      "compilable": 56,
+      "compilable_ratio": 1.0,
+      "executable": 56,
+      "executable_ratio": 1.0
+    },
+    "CWE-918": {
+      "total": 97,
+      "compilable": 97,
+      "compilable_ratio": 1.0,
+      "executable": 97,
+      "executable_ratio": 1.0
+    },
+    "CWE-94": {
+      "total": 102,
+      "compilable": 102,
+      "compilable_ratio": 1.0,
+      "executable": 102,
+      "executable_ratio": 1.0
+    },
+    "CWE-95": {
+      "total": 56,
+      "compilable": 56,
+      "compilable_ratio": 1.0,
+      "executable": 56,
+      "executable_ratio": 1.0
+    },
+    "CWE-295": {
+      "total": 60,
+      "compilable": 60,
+      "compilable_ratio": 1.0,
+      "executable": 60,
+      "executable_ratio": 1.0
+    },
+    "CWE-319": {
+      "total": 90,
+      "compilable": 90,
+      "compilable_ratio": 1.0,
+      "executable": 90,
+      "executable_ratio": 1.0
+    },
+    "CWE-338": {
+      "total": 45,
+      "compilable": 45,
+      "compilable_ratio": 1.0,
+      "executable": 45,
+      "executable_ratio": 1.0
+    },
+    "CWE-434": {
+      "total": 35,
+      "compilable": 35,
+      "compilable_ratio": 1.0,
+      "executable": 35,
+      "executable_ratio": 1.0
+    },
+    "CWE-601": {
+      "total": 63,
+      "compilable": 63,
+      "compilable_ratio": 1.0,
+      "executable": 63,
+      "executable_ratio": 1.0
+    },
+    "CWE-639": {
+      "total": 20,
+      "compilable": 20,
+      "compilable_ratio": 1.0,
+      "executable": 20,
+      "executable_ratio": 1.0
+    },
+    "CWE-862": {
+      "total": 62,
+      "compilable": 62,
+      "compilable_ratio": 1.0,
+      "executable": 62,
+      "executable_ratio": 1.0
+    },
+    "CWE-863": {
+      "total": 29,
+      "compilable": 29,
+      "compilable_ratio": 1.0,
+      "executable": 29,
+      "executable_ratio": 1.0
+    },
+    "CWE-209": {
+      "total": 34,
+      "compilable": 34,
+      "compilable_ratio": 1.0,
+      "executable": 34,
+      "executable_ratio": 1.0
+    },
+    "CWE-400": {
+      "total": 87,
+      "compilable": 87,
+      "compilable_ratio": 1.0,
+      "executable": 87,
+      "executable_ratio": 1.0
+    },
+    "CWE-732": {
+      "total": 60,
+      "compilable": 60,
+      "compilable_ratio": 1.0,
+      "executable": 60,
+      "executable_ratio": 1.0
+    },
+    "CWE-915": {
+      "total": 27,
+      "compilable": 27,
+      "compilable_ratio": 1.0,
+      "executable": 27,
+      "executable_ratio": 1.0
+    },
+    "CWE-117": {
+      "total": 62,
+      "compilable": 62,
+      "compilable_ratio": 1.0,
+      "executable": 62,
+      "executable_ratio": 1.0
+    },
+    "CWE-326": {
+      "total": 47,
+      "compilable": 47,
+      "compilable_ratio": 1.0,
+      "executable": 47,
+      "executable_ratio": 1.0
+    },
+    "CWE-643": {
+      "total": 56,
+      "compilable": 56,
+      "compilable_ratio": 1.0,
+      "executable": 56,
+      "executable_ratio": 1.0
+    }
+  },
+  "execution_errors": {
+    "TimeoutError": 21
+  }
+}

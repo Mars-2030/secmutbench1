@@ -1,0 +1,218 @@
+
+============================================================
+SecMutBench Dataset Builder v2.6.1
+Target: 3000 samples
+============================================================
+
+Step 1: Generating samples from all sources...
+Generating from templates...
+  Generated 198 from templates
+Transforming SecurityEval samples...
+  Transformed 121 from SecurityEval
+Transforming CyberSecEval samples...
+  Wrapped 98 code snippets in functions
+  Transformed 32 from CyberSecEval
+Transforming SecCodePLT samples...
+Loading SecCodePLT: 1345 total rows
+  Loaded 886 samples (skipped 395 unsupported CWEs, 64 with external deps)
+  Transformed 856 from SecCodePLT
+Transforming CWEval samples...
+  Loaded 26 CWEval samples (skipped 4 unsupported CWEs)
+  Transformed 26 from CWEval
+  Total raw samples: 1233
+  Excluded 70 samples (blocked CWEs/IDs)
+
+Step 1.5: Structural deduplication...
+  Exact dedup: removed 8 samples with identical secure_code
+  Structural dedup: removed 598 near-duplicate samples
+  Cross-source similarity dedup (>95%): removed 19 near-duplicate samples
+  After dedup: 538 samples
+
+Step 2: Selecting samples for balanced distribution...
+  Selected: 498 samples
+
+Step 3: Applying contamination prevention...
+  After perturbation: 498 samples
+
+Step 4: Validating samples (fast mode)...
+  Valid: 495, Invalid: 3
+  Removed 3 invalid samples
+    - 3c7c1c13ecb2: ['security_tests syntax error: invalid syntax (<security_tests>, line 17)']
+    - 933287d94c49: ['security_tests syntax error: invalid syntax (<security_tests>, line 15)']
+    - ecb20f2cc840: ['secure_code syntax error: invalid syntax (<secure_code>, line 15)']
+
+Step 5: Filtering to CWEs with operators and 3+ samples...
+
+  CWE Drop Details:
+    [DROP] CWE-1204: no operator, only 1 samples (need 3)
+    [DROP] CWE-16: only 2 samples (need 3)
+    [DROP] CWE-193: no operator, only 1 samples (need 3)
+    [DROP] CWE-215: only 1 samples (need 3)
+    [DROP] CWE-24: only 2 samples (need 3)
+    [DROP] CWE-250: no operator, only 1 samples (need 3)
+    [DROP] CWE-252: no operator, only 1 samples (need 3)
+    [DROP] CWE-259: only 2 samples (need 3)
+    [DROP] CWE-276: only 2 samples (need 3)
+    [DROP] CWE-281: only 2 samples (need 3)
+    [DROP] CWE-283: no operator, only 1 samples (need 3)
+    [DROP] CWE-284: only 2 samples (need 3)
+    [DROP] CWE-285: no operator, only 1 samples (need 3)
+    [DROP] CWE-32: only 1 samples (need 3)
+    [DROP] CWE-321: no operator, only 2 samples (need 3)
+    [DROP] CWE-329: no operator, only 1 samples (need 3)
+    [DROP] CWE-330: only 1 samples (need 3)
+    [DROP] CWE-331: only 1 samples (need 3)
+    [DROP] CWE-339: no operator, only 1 samples (need 3)
+    [DROP] CWE-36: only 1 samples (need 3)
+    [DROP] CWE-362: only 2 samples (need 3)
+    [DROP] CWE-37: only 1 samples (need 3)
+    [DROP] CWE-377: no operator, only 1 samples (need 3)
+    [DROP] CWE-379: no operator, only 1 samples (need 3)
+    [DROP] CWE-385: no operator, only 1 samples (need 3)
+    [DROP] CWE-39: only 2 samples (need 3)
+    [DROP] CWE-40: only 2 samples (need 3)
+    [DROP] CWE-406: no operator, only 1 samples (need 3)
+    [DROP] CWE-414: no operator, only 1 samples (need 3)
+    [DROP] CWE-425: no operator, only 1 samples (need 3)
+    [DROP] CWE-454: no operator, only 1 samples (need 3)
+    [DROP] CWE-462: no operator, only 1 samples (need 3)
+    [DROP] CWE-477: no operator, only 1 samples (need 3)
+    [DROP] CWE-521: only 2 samples (need 3)
+    [DROP] CWE-595: no operator, only 1 samples (need 3)
+    [DROP] CWE-605: no operator, only 1 samples (need 3)
+    [DROP] CWE-641: no operator, only 1 samples (need 3)
+    [DROP] CWE-703: no operator
+    [DROP] CWE-730: no operator
+    [DROP] CWE-759: no operator, only 1 samples (need 3)
+    [DROP] CWE-760: no operator, only 1 samples (need 3)
+    [DROP] CWE-770: only 2 samples (need 3)
+    [DROP] CWE-776: only 1 samples (need 3)
+    [DROP] CWE-80: no operator, only 1 samples (need 3)
+    [DROP] CWE-827: no operator, only 1 samples (need 3)
+    [DROP] CWE-835: no operator, only 1 samples (need 3)
+    [DROP] CWE-841: no operator, only 1 samples (need 3)
+    [DROP] CWE-90: only 2 samples (need 3)
+    [DROP] CWE-941: no operator, only 1 samples (need 3)
+    [DROP] CWE-943: no operator, only 1 samples (need 3)
+    [DROP] CWE-99: no operator, only 1 samples (need 3)
+
+  Kept CWEs (43): ['CWE-113', 'CWE-116', 'CWE-117', 'CWE-1333', 'CWE-1336', 'CWE-20', 'CWE-200', 'CWE-209', 'CWE-22', 'CWE-269', 'CWE-287', 'CWE-295', 'CWE-306', 'CWE-312', 'CWE-319', 'CWE-326', 'CWE-327', 'CWE-328', 'CWE-338', 'CWE-347', 'CWE-352', 'CWE-367', 'CWE-400', 'CWE-434', 'CWE-502', 'CWE-522', 'CWE-601', 'CWE-611', 'CWE-639', 'CWE-643', 'CWE-732', 'CWE-74', 'CWE-77', 'CWE-79', 'CWE-798', 'CWE-862', 'CWE-863', 'CWE-89', 'CWE-915', 'CWE-918', 'CWE-94', 'CWE-942', 'CWE-95']
+  Before: 495 samples across 94 CWEs
+  After: 427 samples across 43 CWEs
+  Removed CWEs (no operator or <5 samples): 51
+
+Step 6: Fixing remaining issues...
+    Fixes: 28 assertions added, 0 tests regenerated, 0 difficulties fixed
+  Fixed: 427 samples
+
+Step 7: Final validation (verify operators fire, signatures match + VD validation)...
+  Before: 427 samples
+  After: 117 samples
+  Dropped (no mutants produced): 155
+  Dropped (signature mismatch): 3
+  Dropped (insecure secure_code): 2
+  Dropped (tautological security test): 4
+  Dropped (VD both pass - test doesn't detect vuln): 102
+  Dropped (VD both fail - test crashes): 42
+  Dropped (VD inverted - secure fails): 2
+
+  VD Failure Diagnostics (by CWE|Source|Error):
+    vd_both_fail:
+         5x CWE-22|SecCodePLT|==================================== ERRORS ====================================
+______________________ ERROR collecting test_generated.py ______________________
+test_generated.py
+         4x CWE-862|SecCodePLT|Assertion failed
+         2x CWE-798|CyberSecEval|ImportError
+         2x CWE-328|CyberSecEval|ImportError
+         2x CWE-611|SecurityEval|==================================== ERRORS ====================================
+______________________ ERROR collecting test_generated.py ______________________
+test_generated.py
+         2x CWE-295|SecCodePLT|ImportError
+         2x CWE-400|SecCodePLT|Assertion failed
+         2x CWE-326|SecurityEval|Assertion failed
+         1x CWE-89|CyberSecEval|AttributeError
+         1x CWE-22|SecMutBench|Assertion failed
+    vd_both_pass:
+         2x CWE-352|SecCodePLT|import re\n\ndef test_change_user_phone_csrf_protection():\n    """Test CSRF protection.\n\n    PASS cond
+         2x CWE-200|SecCodePLT|import re\n\ndef test_create_employee_report_no_sensitive_exposure():\n    """Test sensitive informatio
+         1x CWE-79|SecMutBench|from html import escape\nimport html\n\ndef test_build_user_table_xss():\n    """Test XSS prevention via
+         1x CWE-79|SecMutBench|from html import escape\nfrom urllib.parse import quote, unquote\nimport html\nimport urllib.parse\n\ndef
+         1x CWE-77|SecMutBench|import re\n\ndef test_run_git_command_command_injection():\n    """Test command injection prevention.\n\n
+         1x CWE-77|SecMutBench|import re\n\ndef test_backup_database_command_injection():\n    """Test command injection prevention.\n\n
+         1x CWE-77|SecMutBench|import re\n\ndef test_compress_files_command_injection():\n    """Test command injection prevention.\n\n 
+         1x CWE-77|SecCodePLT|import os\nimport re\n\ndef test_filtered_system_command_command_injection():\n    """Test command injec
+         1x CWE-77|SecCodePLT|import os\nimport re\n\ndef test_restricted_command_executor_command_injection():\n    """Test command i
+         1x CWE-77|SecCodePLT|import os\nimport re\n\ndef test_validate_and_execute_command_command_injection():\n    """Test command 
+    vd_inverted:
+         1x CWE-287|SecMutBench|None
+         1x CWE-400|SecCodePLT|Assertion failed: Resource exhaustion: unlimited input processed without size check
+assert False
+
+Step 7.5: Pre-generating mutants...
+  Total mutants: 289 across 117 samples
+  Avg mutants/sample: 2.5
+
+Step 8: Adding quality metadata...
+  Quality metadata added to 117 samples
+
+============================================================
+Dataset Statistics
+============================================================
+
+Total samples: 117
+
+By CWE (31 unique):
+  CWE-117: 3
+  CWE-1333: 1
+  CWE-20: 2
+  CWE-209: 1
+  CWE-22: 10
+  CWE-295: 2
+  CWE-306: 6
+  CWE-319: 2
+  CWE-326: 1
+  CWE-327: 5
+  CWE-328: 1
+  CWE-338: 1
+  CWE-352: 4
+  CWE-400: 3
+  CWE-434: 1
+  CWE-502: 11
+  CWE-601: 1
+  CWE-611: 6
+  CWE-639: 1
+  CWE-643: 1
+  CWE-732: 2
+  CWE-74: 1
+  CWE-79: 13
+  CWE-798: 7
+  CWE-862: 4
+  CWE-863: 1
+  CWE-89: 5
+  CWE-915: 1
+  CWE-918: 11
+  CWE-94: 8
+  CWE-95: 1
+
+By difficulty:
+  easy: 44
+  medium: 54
+  hard: 19
+
+By source:
+  CWEval: 9
+  SecCodePLT: 29
+  SecMutBench: 76
+  SecurityEval: 3
+
+By quality level:
+  auto: 117 (100.0%)
+
+Saved 117 samples to /Users/mariamalmutairi/Documents/PhdProj/secTest/SecMutBench/data/dataset.json
+Saved 44 easy samples to /Users/mariamalmutairi/Documents/PhdProj/secTest/SecMutBench/data/splits/easy.json
+Saved 54 medium samples to /Users/mariamalmutairi/Documents/PhdProj/secTest/SecMutBench/data/splits/medium.json
+Saved 19 hard samples to /Users/mariamalmutairi/Documents/PhdProj/secTest/SecMutBench/data/splits/hard.json
+
+============================================================
+Dataset build complete!
+============================================================

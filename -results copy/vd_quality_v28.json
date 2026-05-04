@@ -1,0 +1,136 @@
+{
+  "summary": {
+    "total": 339,
+    "correct": 339,
+    "correct_rate": 1.0
+  },
+  "by_category": {
+    "correct": 339,
+    "both_pass": 0,
+    "both_fail": 0,
+    "inverted": 0,
+    "no_tests": 0
+  },
+  "by_cwe": {
+    "CWE-89": {
+      "correct": 16,
+      "issues": 0
+    },
+    "CWE-79": {
+      "correct": 13,
+      "issues": 0
+    },
+    "CWE-22": {
+      "correct": 15,
+      "issues": 0
+    },
+    "CWE-20": {
+      "correct": 9,
+      "issues": 0
+    },
+    "CWE-74": {
+      "correct": 11,
+      "issues": 0
+    },
+    "CWE-798": {
+      "correct": 13,
+      "issues": 0
+    },
+    "CWE-502": {
+      "correct": 10,
+      "issues": 0
+    },
+    "CWE-306": {
+      "correct": 16,
+      "issues": 0
+    },
+    "CWE-327": {
+      "correct": 12,
+      "issues": 0
+    },
+    "CWE-328": {
+      "correct": 11,
+      "issues": 0
+    },
+    "CWE-352": {
+      "correct": 14,
+      "issues": 0
+    },
+    "CWE-611": {
+      "correct": 13,
+      "issues": 0
+    },
+    "CWE-918": {
+      "correct": 15,
+      "issues": 0
+    },
+    "CWE-94": {
+      "correct": 15,
+      "issues": 0
+    },
+    "CWE-95": {
+      "correct": 8,
+      "issues": 0
+    },
+    "CWE-295": {
+      "correct": 14,
+      "issues": 0
+    },
+    "CWE-319": {
+      "correct": 18,
+      "issues": 0
+    },
+    "CWE-338": {
+      "correct": 11,
+      "issues": 0
+    },
+    "CWE-434": {
+      "correct": 5,
+      "issues": 0
+    },
+    "CWE-601": {
+      "correct": 11,
+      "issues": 0
+    },
+    "CWE-639": {
+      "correct": 5,
+      "issues": 0
+    },
+    "CWE-862": {
+      "correct": 10,
+      "issues": 0
+    },
+    "CWE-863": {
+      "correct": 5,
+      "issues": 0
+    },
+    "CWE-209": {
+      "correct": 7,
+      "issues": 0
+    },
+    "CWE-400": {
+      "correct": 15,
+      "issues": 0
+    },
+    "CWE-732": {
+      "correct": 12,
+      "issues": 0
+    },
+    "CWE-915": {
+      "correct": 5,
+      "issues": 0
+    },
+    "CWE-117": {
+      "correct": 12,
+      "issues": 0
+    },
+    "CWE-326": {
+      "correct": 10,
+      "issues": 0
+    },
+    "CWE-643": {
+      "correct": 8,
+      "issues": 0
+    }
+  }
+}
