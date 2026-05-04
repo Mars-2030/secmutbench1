@@ -104,3 +104,15 @@ docs/superpowers/
 
 # HuggingFace cache
 .cache/
+.docs/
+.data/
+.results/
+.results/
+.claude/
+.pytest_cache
+.-results copy/
+.paper/
+
+*.txt
+*.log
+
