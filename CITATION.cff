@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "ALMutairi"
+    given-names: "Mariam"
+    orcid: "https://orcid.org/0009-0009-3468-6091"
+  - family-names: "Lu"
+    given-names: "Chang-Tien"
+title: "SecMutBench: Mutation-Based Benchmark for LLM Security Test Generation"
+version: "1.0"
+doi: "10.5281/zenodo.20045642"
+date-released: "2026-05-05"
+url: "https://github.com/Mars-2030/secmutbench"
