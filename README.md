@@ -1,7 +1,7 @@
 # SecMutBench
 [![DOI](https://zenodo.org/badge/1229249451.svg)](https://doi.org/10.5281/zenodo.20045642)
 
-> **Submitted to [ACM AIWare 2026 — Benchmark and Dataset Track](https://2026.aiwareconf.org/track/aiware-2026-benchmark---dataset-track)**
+> **Accepted at [ACM AIWare 2026 — Benchmark and Dataset Track](https://2026.aiwareconf.org/track/aiware-2026-benchmark---dataset-track)**
 >
 > *Paper under review. Author names withheld for double-blind review.*
 
